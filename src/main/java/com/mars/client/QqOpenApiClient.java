@@ -3,7 +3,6 @@ package com.mars.client;
 
 import com.mars.model.Media;
 import com.mars.model.Message;
-import com.mars.model.OpenApiToken;
 import com.mars.model.UploadedMedia;
 import org.springframework.cloud.openfeign.FeignClient;
 import org.springframework.http.ResponseEntity;

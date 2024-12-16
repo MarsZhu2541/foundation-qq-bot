@@ -4,7 +4,7 @@
 	<modelVersion>4.0.0</modelVersion>
 	<groupId>com.mars</groupId>
 	<artifactId>qq-bot-foundation</artifactId>
-	<version>0.0.1-SNAPSHOT</version>
+	<version>1.0.0</version>
 	<packaging>jar</packaging>
 	<name>qq-bot-foundation</name>
 	<description>QQ Bot webhook foundation for Spring Boot</description>
