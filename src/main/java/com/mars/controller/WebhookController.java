@@ -26,17 +26,17 @@ public class WebhookController {
     private EventAckService eventAckService;
 
     @PostMapping("/webhook")
-    public ResponseEntity<Object> handleValidation(@RequestBody QqWebhookEvent event) {
+    public ResponseEntity<Object> handleWebhookEvent(@RequestBody QqWebhookEvent event) {
 
         int op = event.getOp();
-        log.info("Received QQ webhook operation: {},  id: {}: ", event.getOp(), event.getId());
+        log.info("Received QQ webhook operation: {}: ", event.getOp());
         switch (op) {
             case 0:
-                log.info("Received QQ webhook event: {}", event.getT());
+                log.info("Received QQ webhook event: {}", event.getD().getContent());
                 eventAckService.handleEvent(event);
                 return ResponseEntity.ok("known operation");
             case 13:
-                log.info("Received QQ webhook callback validate: {}", event.getId());
+                log.info("Received QQ webhook callback validate");
                 return ResponseEntity.ok(validateWebhook(event.getD().getEvent_ts(), event.getD().getPlain_token()));
             default:
                 return ResponseEntity.ok("unknown operation");

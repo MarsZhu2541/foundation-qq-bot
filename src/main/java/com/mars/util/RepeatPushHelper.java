@@ -1,7 +1,10 @@
 package com.mars.util;
 
+import lombok.extern.slf4j.Slf4j;
+
 import java.util.concurrent.ArrayBlockingQueue;
 
+@Slf4j
 public class RepeatPushHelper {
 
     private final ArrayBlockingQueue<String> queue;
@@ -14,7 +17,7 @@ public class RepeatPushHelper {
         if (queue.size() == queue.remainingCapacity()) {
             String removed = queue.poll();
             if (removed!= null) {
-                System.out.println("队列已满，移除元素: " + removed);
+                log.debug("队列已满，移除元素: " + removed);
             }
         }
         queue.put(element);

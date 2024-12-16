@@ -3,10 +3,10 @@
 	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 https://maven.apache.org/xsd/maven-4.0.0.xsd">
 	<modelVersion>4.0.0</modelVersion>
 	<groupId>com.mars</groupId>
-	<artifactId>foundation-qqbot</artifactId>
+	<artifactId>qq-bot-foundation</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
 	<packaging>jar</packaging>
-	<name>foundation-qqBot</name>
+	<name>qq-bot-foundation</name>
 	<description>QQ Bot webhook foundation for Spring Boot</description>
 	<properties>
 		<java.version>17</java.version>

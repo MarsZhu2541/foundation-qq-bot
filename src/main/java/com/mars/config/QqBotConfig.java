@@ -1,5 +1,6 @@
 package com.mars.config;
 
+import feign.codec.ErrorDecoder;
 import lombok.Getter;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.cloud.openfeign.EnableFeignClients;
@@ -21,5 +22,10 @@ public class QqBotConfig {
     @Bean
     public QqOpenApiHeaderInterceptor qqOpenApiHeaderInterceptor() {
         return new QqOpenApiHeaderInterceptor();
+    }
+
+    @Bean
+    public ErrorDecoder customErrorDecoder() {
+        return new QqOpenApiErrorDecoder();
     }
 }

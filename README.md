@@ -18,7 +18,7 @@ https://bot.q.qq.com/wiki/develop/api-v2/
 ```
     <dependency>
         <groupId>com.mars</groupId>
-        <artifactId>foundation-qqbot</artifactId>
+        <artifactId>qq-bot-foundation</artifactId>
         <version>0.0.1-SNAPSHOT</version>
     </dependency>
 ```
