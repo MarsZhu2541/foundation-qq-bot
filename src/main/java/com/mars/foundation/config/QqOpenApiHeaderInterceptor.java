@@ -1,6 +1,6 @@
-package com.mars.config;
+package com.mars.foundation.config;
 
-import com.mars.service.QqAuthService;
+import com.mars.foundation.service.QqAuthService;
 import feign.RequestInterceptor;
 import feign.RequestTemplate;
 import org.springframework.beans.factory.annotation.Autowired;

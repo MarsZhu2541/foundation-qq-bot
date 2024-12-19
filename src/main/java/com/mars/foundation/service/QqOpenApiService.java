@@ -1,9 +1,9 @@
-package com.mars.service;
+package com.mars.foundation.service;
 
-import com.mars.client.QqOpenApiClient;
-import com.mars.model.Media;
-import com.mars.model.Message;
-import com.mars.model.UploadedMedia;
+import com.mars.foundation.client.QqOpenApiClient;
+import com.mars.foundation.model.Media;
+import com.mars.foundation.model.Message;
+import com.mars.foundation.model.UploadedMedia;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.ResponseEntity;
 import org.springframework.stereotype.Service;

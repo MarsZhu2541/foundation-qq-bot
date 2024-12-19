@@ -1,4 +1,4 @@
-package com.mars.config;
+package com.mars.foundation.config;
 
 import feign.codec.ErrorDecoder;
 import lombok.Getter;
@@ -10,8 +10,8 @@ import org.springframework.context.annotation.Configuration;
 
 @Getter
 @Configuration
-@EnableFeignClients("com.mars.client")
-@ComponentScan({"com.mars.controller", "com.mars.service"})
+@EnableFeignClients("com.mars.foundation.client")
+@ComponentScan({"com.mars.foundation.controller", "com.mars.foundation.service"})
 public class QqBotConfig {
     @Value("${openApi.appId}")
     String appId;

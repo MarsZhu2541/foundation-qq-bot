@@ -1,9 +1,9 @@
-package com.mars.controller;
+package com.mars.foundation.controller;
 
-import com.mars.config.QqBotConfig;
-import com.mars.model.AuthResponse;
-import com.mars.model.QqWebhookEvent;
-import com.mars.service.EventAckService;
+import com.mars.foundation.config.QqBotConfig;
+import com.mars.foundation.model.AuthResponse;
+import com.mars.foundation.model.QqWebhookEvent;
+import com.mars.foundation.service.EventAckService;
 import lombok.extern.slf4j.Slf4j;
 import org.bouncycastle.crypto.params.Ed25519PrivateKeyParameters;
 import org.bouncycastle.crypto.signers.Ed25519Signer;

@@ -17,9 +17,9 @@ https://bot.q.qq.com/wiki/develop/api-v2/
 1. Add maven dependency
 ```
     <dependency>
-        <groupId>com.mars</groupId>
-        <artifactId>qq-bot-foundation</artifactId>
-        <version>0.0.1-SNAPSHOT</version>
+        <groupId>com.mars.foundation</groupId>
+        <artifactId>foundation-qq-bot</artifactId>
+        <version>1.0.0</version>
     </dependency>
 ```
 2. Add springboot configuration in application.yaml

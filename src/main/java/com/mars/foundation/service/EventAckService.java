@@ -1,7 +1,7 @@
-package com.mars.service;
+package com.mars.foundation.service;
 
 
-import com.mars.model.QqWebhookEvent;
+import com.mars.foundation.model.QqWebhookEvent;
 import org.springframework.stereotype.Service;
 
 @Service

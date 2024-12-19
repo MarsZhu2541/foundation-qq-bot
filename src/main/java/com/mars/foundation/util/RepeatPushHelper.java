@@ -1,4 +1,4 @@
-package com.mars.util;
+package com.mars.foundation.util;
 
 import lombok.extern.slf4j.Slf4j;
 

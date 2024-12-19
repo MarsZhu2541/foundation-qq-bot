@@ -1,6 +1,5 @@
-package com.mars.model;
+package com.mars.foundation.model;
 
-import com.fasterxml.jackson.annotation.JsonValue;
 import lombok.Getter;
 
 @Getter
@@ -10,6 +9,7 @@ public class Message {
     private final String event_id;
     private final String msg_id;
     private final UploadedMedia media;
+    private final int msg_seq;
 
     private Message(MessageBuilder builder) {
         this.content = builder.content;
@@ -17,6 +17,7 @@ public class Message {
         this.event_id = builder.event_id;
         this.msg_id = builder.msg_id;
         this.media = builder.media;
+        this.msg_seq = builder.msg_seq;
     }
 
     public static class MessageBuilder {
@@ -25,6 +26,7 @@ public class Message {
         private String event_id;
         private String msg_id;
         private UploadedMedia media;
+        private int msg_seq;
 
         public MessageBuilder content(String content) {
             this.content = content;
@@ -48,6 +50,11 @@ public class Message {
 
         public MessageBuilder media(UploadedMedia media) {
             this.media = media;
+            return this;
+        }
+
+        public MessageBuilder msgSeq(int msg_seq) {
+            this.msg_seq = msg_seq;
             return this;
         }
 

@@ -1,4 +1,4 @@
-package com.mars.model;
+package com.mars.foundation.model;
 
 import com.fasterxml.jackson.annotation.JsonValue;
 

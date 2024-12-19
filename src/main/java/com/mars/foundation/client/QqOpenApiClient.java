@@ -1,9 +1,9 @@
-package com.mars.client;
+package com.mars.foundation.client;
 
 
-import com.mars.model.Media;
-import com.mars.model.Message;
-import com.mars.model.UploadedMedia;
+import com.mars.foundation.model.Media;
+import com.mars.foundation.model.Message;
+import com.mars.foundation.model.UploadedMedia;
 import org.springframework.cloud.openfeign.FeignClient;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.PathVariable;

@@ -1,9 +1,9 @@
-package com.mars.service;
+package com.mars.foundation.service;
 
-import com.mars.client.QqAuthClient;
-import com.mars.config.QqBotConfig;
-import com.mars.model.OpenApiToken;
-import com.mars.model.QqBotAuth;
+import com.mars.foundation.client.QqAuthClient;
+import com.mars.foundation.config.QqBotConfig;
+import com.mars.foundation.model.OpenApiToken;
+import com.mars.foundation.model.QqBotAuth;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 

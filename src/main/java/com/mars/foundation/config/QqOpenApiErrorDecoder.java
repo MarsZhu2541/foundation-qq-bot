@@ -1,16 +1,12 @@
-package com.mars.config;
+package com.mars.foundation.config;
 
 import com.fasterxml.jackson.databind.ObjectMapper;
-import com.mars.exception.QqBotException;
+import com.mars.foundation.exception.QqBotException;
 import feign.Response;
-import feign.codec.Decoder;
 import feign.codec.ErrorDecoder;
-import org.springframework.http.HttpStatus;
-import org.springframework.http.converter.json.MappingJackson2HttpMessageConverter;
 
 import java.io.IOException;
 import java.io.InputStream;
-import java.lang.reflect.Type;
 
 public class QqOpenApiErrorDecoder implements ErrorDecoder {
 

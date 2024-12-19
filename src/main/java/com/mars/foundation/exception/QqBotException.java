@@ -1,4 +1,4 @@
-package com.mars.exception;
+package com.mars.foundation.exception;
 
 import com.fasterxml.jackson.annotation.JsonCreator;
 import com.fasterxml.jackson.annotation.JsonProperty;

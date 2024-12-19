@@ -1,4 +1,4 @@
-package com.mars.model;
+package com.mars.foundation.model;
 
 import lombok.Getter;
 import lombok.Setter;
