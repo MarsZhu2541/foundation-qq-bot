@@ -1,4 +1,4 @@
-# qq-bot-foundation(Webhook, Springboot)
+# foundation-qq-bot(Webhook, Springboot)
 
 A java foundation package for official QQ Bot(not Mirai) base on Webhook and Springboot
 
@@ -17,7 +17,7 @@ https://bot.q.qq.com/wiki/develop/api-v2/
 1. Add maven dependency
 ```
     <dependency>
-        <groupId>com.mars.foundation</groupId>
+        <groupId>io.github.marszhu2541</groupId>
         <artifactId>foundation-qq-bot</artifactId>
         <version>1.0.0</version>
     </dependency>
